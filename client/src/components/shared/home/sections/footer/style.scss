@@ -1,0 +1,17 @@
+@import '../assets/colors.scss';
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: $primary_color;
+  height: 64px;
+}
+.logo {
+  background-size: cover;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+  color: white !important;
+}

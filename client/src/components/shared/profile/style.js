@@ -1,0 +1,80 @@
+const style = {
+  containerStyle: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    pt: '130px',
+  },
+  boxForStyle: {
+    display: 'flex',
+    justifyContent: 'center',
+    justifyItems: 'center',
+    width: { xs: '95%', sm: '90%', md: '700px' },
+    height: '500px',
+    boxShadow: '1px -1px 2px 1px rgb(0 0 0 / 20%)',
+    border: '1px solid rgb(40,205,197)',
+  },
+  buttonContainerStyle: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
+    columnGap: '20px',
+    height: '25%',
+    bgcolor: 'rgb(240,255,255)',
+  },
+  editButtonStyle: {
+    width: { xs: '90%', sm: '90%', md: '35%' },
+    height: '30%',
+  },
+  userInfoContainerStyle: {
+    width: '100%',
+    height: '100%',
+  },
+  textContainerStyle: {
+    display: 'flex',
+    flexDirection: 'column',
+    height: '90%',
+    justifyContent: 'center',
+    gap: '10px',
+    mx: { xs: '20px', sm: '50px' },
+  },
+  deleteContainerStyle: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+  },
+  deleteBox: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '90%',
+  },
+  editContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%',
+    gap: '10px',
+  },
+  editForm: {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '10px',
+  },
+  profileImgContainer: {
+    height: '75%',
+    bgcolor: 'white',
+    backgroundSize: '100% 100%',
+    backgroundRepeat: 'no-repeat',
+  },
+};
+
+export default style;

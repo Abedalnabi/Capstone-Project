@@ -1,0 +1,81 @@
+@import '../../../assets/colors.scss';
+
+.home-header-container {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top: 64px;
+  background-image: url('./../../../assets/img/heroImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(45.1977vw);
+
+  .quote-container {
+    position: relative;
+    width: 500px;
+    max-width: 500px;
+    height: 180px;
+    margin-left: 3%;
+    background-color: $quote_background;
+    .quote {
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      letter-spacing: 1.1px;
+      line-height: 1.2;
+      color: $secondary_color;
+    }
+    .quote-name {
+      padding: 20px;
+      position: absolute;
+      color: $secondary_color;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.aboutUs-container,
+.contactUs-container {
+  .aboutUs-text,
+  .contactUs-text {
+    padding: 20px;
+    color: $white;
+    background-color: $primary_color;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .aboutUS-content,
+  .contactUs-content {
+    height: 900px;
+    margin: 20px;
+  }
+}
+
+.up-btn {
+  position: fixed;
+  bottom: 3px;
+  right: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sports-section {
+    width: 100% !important;
+  }
+  .home-header-container {
+    height: 300px;
+    .quote-container {
+      width: 90%;
+      height: 76%;
+      margin: auto;
+    }
+  }
+  .aboutUs-container,
+  .contactUs-container {
+    .aboutUs-text,
+    .contactUs-text {
+      margin: 20px;
+    }
+  }
+}

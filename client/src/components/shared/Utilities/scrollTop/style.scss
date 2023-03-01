@@ -1,0 +1,10 @@
+@import '../../assets/colors.scss';
+
+.up-btn {
+  margin: 25px;
+  padding: 11px;
+  color: $white;
+  background: $scroll_top_color;
+  border: none !important;
+  cursor: pointer;
+}

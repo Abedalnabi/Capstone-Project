@@ -1,0 +1,6 @@
+const SPORT_ACTIONS = {
+  SET_SPORTS: 'SET_SPORTS',
+  SET_SPORTS_LIST: 'SET_SPORTS_LIST',
+};
+
+export default SPORT_ACTIONS;

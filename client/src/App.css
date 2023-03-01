@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'TheSans';
+  src: local('TheSans'), url(./components/shared/assets/fonts/TheSans-Plain.woff) format('truetype');
+}
+* {
+  font-family: 'TheSans', Helvetica, Arial !important;
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  box-sizing: border-box;
+}
+.notFoundPage {
+  margin-top: 90px;
+  margin-left: 10px;
+}
+.App {
+  margin: auto !important;
+  max-width: 2200px;
+  min-height: 90vh;
+  background-color: azure;
+}
+.container {
+  height: 900px;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.primary_color {
+  color: rgb(36, 96, 157) !important;
+}
+.primary-color-background {
+  background-color: rgb(36, 96, 157) !important;
+}
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+  color: white;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+}

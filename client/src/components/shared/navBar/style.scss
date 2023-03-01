@@ -1,0 +1,128 @@
+@import '../assets/colors.scss';
+
+.navBar-container {
+  min-width: 200px;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  max-width: 2200px !important;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  height: 64px;
+  background-color: rgb(33, 33, 33);
+
+  // border-bottom: 1px solid rgb(240, 255, 255, 0.5);
+  .navBar-item {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgb(0, 11, 44);
+    cursor: pointer;
+  }
+  .logo {
+    margin: 50px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  span {
+    position: relative;
+    color: $secondary_color;
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    transition-duration: 0.55s;
+    &:hover {
+      background-color: rgb(168, 166, 166, 0.2);
+      transition-duration: 0.55s;
+    }
+  }
+
+  .logo-container {
+    margin-left: 50px;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .x-button {
+    display: none;
+  }
+  .MuiTouchRipple-root {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav-item{
+    color: black;
+  }
+  .navBar-container {
+    .IoMdContact {
+      color: white;
+    }
+    .logo {
+      margin: 0px;
+    }
+    .nav-toggle {
+      display: flex !important;
+      width: 50px;
+      height: 50px;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      .bar {
+        position: relative;
+        width: 32px;
+        height: 2px;
+        background-color: $primary_color;
+      }
+      .bar::before,
+      .bar::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        background-color: $primary_color;
+        border-radius: 2px;
+      }
+      .bar::before {
+        width: 32px;
+        transform: translateY(-8px);
+        right: 0;
+      }
+      .bar::after {
+        width: 32px;
+        transform: translateY(8px);
+      }
+    }
+    .navBar-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: flex-start !important;
+      flex-direction: column;
+      background-color: $primary_color;
+      width: 80%;
+      height: 100vh;
+      span {
+        color: black;
+        width: 100%;
+      }
+    }
+    button {
+      margin: 22px;
+      width: 100px;
+    }
+  }
+  .open {
+    display: none !important;
+    margin: 22px;
+  }
+  .x-button {
+    display: block !important;
+    margin-left: 20px;
+    width: 60px !important;
+  }
+}

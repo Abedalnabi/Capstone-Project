@@ -1,0 +1,25 @@
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+.file-input label {
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgb(33, 33, 33);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(40, 205, 197);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input:hover + label,
+input:focus + label {
+  transform: scale(1.02);
+}
